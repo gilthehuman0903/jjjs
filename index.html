@@ -1,0 +1,102 @@
+<html>
+    <head>
+    <style>
+        body {margin: 0; padding:0;
+            background-color: rgb(247, 162, 141);
+        
+        }
+        .container{ max-width:1200px;margin: 0 auto; }
+        .container > header{
+            height: 220px; background-image: url('img/background.jpg');
+            background-size:100% 100%;  position: relative;
+        }
+        .container > nav{
+            height:45px; line-height: 45px; background:orangered; margin: 5px 0;
+        }
+        .container > article{
+             min-height:400px;  width:75%; background:rgb(231, 230, 215); float:right;
+        }
+        .container > aside{
+            background: url('images/nc.jpg');
+            height: 100%; width:24%; background-color:lightgray; float:left;
+        }
+        .container > footer {
+            border-top:5px double orangered;
+            line-height:50px; background-color:rgb(21, 68, 68); clear:both;
+            padding-left: 10px;
+          
+            
+        }
+        nav ul { margin:0; padding:0}
+        nav > ul > li{ display:inline-block; position:relative; }
+        nav > ul > li > a{
+            display:block; text-decoration:none; color:white;
+            font-variant:small-caps; font-size:larger;
+            padding:0 10px;  line-height:45px;
+        }
+        nav ul ul{
+            position:absolute; display:none;
+        }
+        nav > ul>li:hover>ul{
+            display:block; width:180px;
+            list-style:none; border-radius:3px;
+            box-shadow:0 0 1px gray; background-color: white;
+            text-align: left;
+            background-color: blanchedalmond;
+        }
+        nav > ul>li:hover>ul a{
+            color:rgb(233, 34, 200); text-decoration:none;
+            font-variant:small-caps; font-size:larger;
+            padding: 5px 0 5px 10px;
+        }
+        .container > nav a{
+            color: rgb(248, 248, 16);
+               text-decoration: none;
+               text-decoration: none;
+               font-size: 20px;
+               line-height: 45px;
+               margin-right: 10px
+        }
+        .container a:hover{
+            box-shadow: 0 3px red; 
+          text-transform: uppercase; 
+               color:rgb(238, 27, 27);
+               background-color: white;
+        }
+         .ft{color: rgb(248, 90, 27);}
+         
+         
+
+    </style>        
+    </head>
+
+    <body>
+        <div class="container">
+            <header> </header>
+            <nav> 
+                <ul>
+                    <li><a href="tc.html" target="page">Trang chủ</a></li> 
+                    <li><a href="login.html" target="page">Đăng nhập</a></li>           
+                    <li><a href="#" >Giới thiệu</a></li>
+                    <li><a href="#">Sản phẩm</a>
+                        <ul>
+                            <li><a href="ao.html" target="page"> Áo Bóng Đá</a></li>
+                            <li><a href="giay.html" target="page" >Giày Bóng Đá</a></li>                          
+                        </ul>
+                        
+                    </li>
+                    <li><a href="lienhe.html" target="page">Liên hệ</a></li>
+                    
+                    <li><a href="hoidap.html" target="page">Hỏi đáp</a></li>
+                </ul>
+                
+            </nav>
+            <aside> </aside>
+            <article> <iframe name='page' width="100%" height="100%"></iframe> </article>
+            <footer>
+                <p class="ft">Thực hiện bởi sinh viên: Nguyễn Phúc Thiện</p>
+            </footer>
+        </div>
+        
+    </body>
+</html>
